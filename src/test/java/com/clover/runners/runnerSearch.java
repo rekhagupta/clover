@@ -1,4 +1,4 @@
-package runners;
+package com.clover.runners;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
@@ -8,10 +8,10 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/featureTests",
         plugin = {"pretty", "html:target/cucumber-report", "json:target/cucumber-report/header-links.json"},
-        tags = {"@getWeatherByParameters"},
-        glue = {"stepDefinitions"},
+        tags = {"@search"},
+        glue = {"com/clover/stepDefinitions"},
         monochrome = true,
         strict = true)
 
-public class runnerAPI {
+public class runnerSearch {
 }

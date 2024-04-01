@@ -1,22 +1,21 @@
-Java Maven Project /w BDD cuccumber framework for the assignment as
+Java Maven Project /w BDD cuccumber framework for the assignment below:
 
-With the API, implement your test scripts accomplishing the following:
-Script 1:
-    Query the URL by the city name
-        Verify `name` attribute corresponds to the entered city name
-Script 2:
-    Query the URL by latitude and longitude
-        Verify `coord.lat` and `coord.lon` attributes correspond to the values entered
-Script 3:
-    Query the URL by ZIP code
-        Verify `name` attribute corresponds to the city that contains the ZIP code (e.g. 10007 should correspond to NYC, 94040 should correspond to Mountain View, CA, etc.)
+Create a test framework using any language and tool(s) that does the following:
+1. Visit one or more search engine(s); i.e google, bing, yahoo, etc...
+2. Submit a search term
+3. On the results page, take the first returned item and assert it as the expected result.
 
-This is completed in a single feature file "getWeather.feature"
+While this may seem like a simple test, you should take into consideration the following requirements.
+1. The framework when implemented should use industry standard design patterns and principles.
+2. The framework should be capable of supporting enterprise level applications.
+3. The framework should minimize the presence of code anti-patterns.
+4. The framework should be easily extended and/or modified to satisfy changes in requirements
 
 Steps to build the project:
-    1. Download via GIT or using the attached .zip
+    1. Clone via GIT or using the attached .zip
     2. Run 'mvn clean install'
-    3. Run 'runnerAPI' from ~/src/test/java/runners
+Step to run the test case:
+    1. Run 'runnerSearch' from ~/src/test/java/com.clover.runners
 
 Verify the report at:
     ~/target/cucumber-report/index.html
